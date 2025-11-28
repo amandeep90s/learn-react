@@ -30,9 +30,22 @@ function Navigation() {
         <NavLink to="/user/123" style={navLinkStyle}>
           User Profile
         </NavLink>
-        <NavLink to="/dashboard" style={navLinkStyle}>
-          Dashboard
-        </NavLink>
+        <li>
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Dashboard
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/date-form"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Date Form
+          </NavLink>
+        </li>
       </div>
     </nav>
   );

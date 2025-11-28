@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import DashboardStats from "./pages/DashboardStats";
 import DashboardSettings from "./pages/DashboardSettings";
 import NotFound from "./pages/NotFound";
+import DateRangeForm from "./components/DateRangeForm";
 import "./App.css";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="stats" element={<DashboardStats />} />
             <Route path="settings" element={<DashboardSettings />} />
           </Route>
+          <Route path="/date-form" element={<DateRangeForm />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

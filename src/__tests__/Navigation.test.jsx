@@ -42,6 +42,6 @@ describe("Navigation Component", () => {
     );
 
     const links = screen.getAllByRole("link");
-    expect(links).toHaveLength(4);
+    expect(links).toHaveLength(5);
   });
 });
